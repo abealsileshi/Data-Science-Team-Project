@@ -4,6 +4,28 @@ There is never a right way to predict the direction of the Stock. Our goal was t
 
 For this project we constructed and tested 4 Stock Prediction Algorithms. 
 
+# RNN Binary Classification
+**Libraries used:**
+- **pandas**
+  - Used to gather financial/sentiment data using pandas datareader and read_csv.
+- **numpy**
+  - Used to manipulate arrays and prime the data to passed into the model, which only accepts numpy arrays as input.
+- **Tensorflow.Keras**
+  - Imported the tensorflow for access to Keras' layers (Input, LSTM, and Dense) and Keras' Model function.
+- **Matplotlib.PyPlot**
+  - Used to plot the loss and accuracy of training and testing.
+- **Sklearn.preprocessing**
+  - Used for the StandardSkalar() to standardize the values in our dataset (i.e., standardizing open, high, low, volume, etc.)
+
+
+- ## Summary
+
+  - First, we collected the data and formatted it into a numpy array of shape T (time/date), by D (number of features).
+  - Secondly, we created the model. The model was implemented using Keras.Model to create a RNN consisting of an Input layer, a LSTM layer, and Dense output layer. 
+  - Next, we tuned our hyper parameters (number of hidden nodes in the LSTM, number of epochs, and the learning rate) on both the model with sentiment and without sentiment.
+  -  Finally, we fitted our models and plotted the results.
+
+
 # Linear Regression Model & Support Vector Regression (SVM)
 
 **Libraries used:**
